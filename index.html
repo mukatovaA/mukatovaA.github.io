@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bake&Shake</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Poiret+One&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body style = "margin:0px">
+
+	<div class = "logo">
+		<img id="logotype" src="https://vk.com/photo374599146_457239760?api_access_key=1be93eccb6ee6de1ec" style="width: 300px" onclick = "window.location.reload()">
+
+		<div class = "loginSuggestion">
+		    <p id = "suggestion">log in for your convenience</p>
+		    <a  id = "myButton" href="#" class="myButton" onclick="popUp()" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">log in</a>
+	    </div>
+
+	    <div class = "user_prof">
+	    	<p id = "user_email" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"></p>
+	    </div>
+
+	</div>
+
+	<div class = "nav">
+		<label for="toggle">&#9776</label>
+	</div>
+
+	<div class = "popUp">			
+
+		<div class = "popUpFilling">
+			<img id="exit" src="https://static.thenounproject.com/png/79122-200.png" width = "7%" onclick="close_popUp()" class = "closed">
+
+		    <p id = "accountLogin">account login</p>
+		    <p id = "usernameRequest">username</p>
+		    <input id="email" type="email" name="email" placeholder="your email">
+
+		    <p id = "passwordRequest">password</p>
+		    <input id="password" type="password" name="password" placeholder="your password">
+		    <br>
+
+		    <a id = "finLoggingIn" href="#" class="finLoggingIn" onclick="login(email.value)" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">log in</a>
+		</div>
+
+	</div>
+    
+	<hr id = "hr1">
+	
+	<input type="checkbox" name="" id = "toggle">
+	<div class = "header">
+		<div id = "home" class = "headElement" onmouseover = "coloring(this)" onmouseout="coloringBack(this)" onclick="window.location.reload()">home</div>
+		<div id = "catalogue" class = "headElement" onmouseover = "coloring(this)" onmouseout="coloringBack(this)" onclick = "pages(this)" >catalogue</div>
+		<div id = "ordering" class = "headElement" onmouseover = "coloring(this)" onmouseout="coloringBack(this)" onclick = "pages(this)" >ordering</div>
+		<div id = "contacts" class = "headElement" onmouseover = "coloring(this)" onmouseout="coloringBack(this)" onclick = "pages(this)" >contacts</div>
+	</div>
+
+	<hr id = "hr2">
+    
+    <p id = "titleName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">Welcome, foodlover!☼</p>
+
+	<div class = "main">
+		<table class = "row1">
+			<tr>
+				<td class = "left">
+		            <img id="mainPic" src = "https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/69829738_1378499045659394_135421993487279951_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=G2ktTcRqPgMAX9Qjgw9&tp=19&oh=f3068650f1720b3e9efc1202b020630d&oe=5FD67B17"  onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+		        </td>
+
+		        <td class = "right">
+		   
+		            <img id="rightSided" src="https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/50512989_2188507061410708_4499493381062542758_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=sx396kF9EnkAX_Mz9ee&tp=18&oh=d20a85b7609a9b1cdeef625dfe7108f1&oe=5FD54901" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+
+		            
+		            <h3 id = "title2" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">What's Bake&Shake about?</h3>
+		            <p id="article">Bake&Shake is a coffee house in Boise,ID with wonderful cakes you need to taste. <span class = "hidden">Вue to quarantine, we also bake custom-made cakes. Check the list of our desserts in "catalogue" page and leave a request in google forms. </span></p>
+		        </td>
+		    </tr>
+		</table>
+
+
+
+		<div class = "contactInfo"> 
+			<div class = "socialMedia">    
+			    <div id = "icons">
+			    	<div class = "circle">
+			    		<a href = "https://web.whatsapp.com/" class = "smLinks">
+			    		    <img id="smIcon" src="https://vk.com/photo374599146_457239764?api_access_key=a9558effeee4e8a711" title = "WhatsApp call" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">
+			    		</a>	
+			    	</div>    
+			    	<div class = "circle"><a href = "https://gmail.com/" class = "smLinks">
+			    		<img id="smIcon" src="https://vk.com/photo374599146_457239761?api_access_key=71b4a061fb4f3c3edf" title = "Gmail" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"></a></div>
+			    	<div class = "circle"><a href = "https://www.instagram.com/vicky_bakery/?hl=ru" class = "smLinks">
+			    		<img id="smIcon" src="https://vk.com/photo374599146_457239763?api_access_key=db127289c11b1a1cc9" title = "Instagram page" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"></a></div>
+			    	<div class = "circle"><a href = "https://www.facebook.com/vickybakery/" class = "smLinks">
+			    		<img id="smIcon" src="https://vk.com/photo374599146_457239762?api_access_key=67b40b579dfdda3cae" title = "Facebook page" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"></a></div>
+			    </div>
+		    </div>
+
+			<div id = "location">  
+			    <div class = "maps">
+			    	<div id = "map"></div>
+			    </div>
+			    <div class = "invitation">
+			    	<h3 class = "mapTitle">How to get to our cafe?</h3>
+			    	<p class = "address">611 S 8th St UNIT 103, Boise, USA</p>
+			    	<p class = "address">Right near the Boise River, beside the Biose Art Museum</p>
+			    	<br>
+			    	
+			    	<h3 class = "mapTitle">Opening Hours</h3>
+			    	<p class = "address">Monday - Sunday : 9am - 8pm</p>
+			    	
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	    <br>
+
+	    <p class = "divider">
+	    	<img id = "whisk" src = "https://vk.com/photo374599146_457239766?api_access_key=c6c5dd63af3e7f70c9">
+	    </p>
+
+	    <div class = "row2">
+
+	    	<div class = "titles">
+	    	    <h2 id = "mainTitle"onmouseover = "coloring(this)" onmouseout="coloringBack(this)">Client feedback</h2>
+	    	    <p id = "secondTitle"onmouseover = "coloring(this)" onmouseout="coloringBack(this)">(Leave your own comment below)</p>
+	        </div>
+
+	    	<form id = "feedback">
+	    		<input id = "comment" placeholder="add your comment" form="feedback"></input>
+	    		<div class = "btn">
+	    			<button id = "submit" onclick = "commenting(comment.value)">submit</button>
+	    			<button id = "cancel" onclick="cancel_comment()">cancel</button>
+
+	    		</div>
+	    	</form>
+
+	    	<div class = "commentList">
+	    		<div class = "finCom">
+	    		    <div class = "user">
+	    		    	<img id = "userPic" src="https://ru.opensuse.org/images/0/0b/Icon-user.png">
+	    			    <h3 id = "emailOf">email</h3>
+	    			</div>
+	    			    <p id = "enteredFB">feedback</p>
+	    			</div>
+	    		</div>
+
+	    		<div class = "finCom2">
+	    		    <div class = "user2">
+	    		    	<img id = "userPic2" src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/4_avatar-512.png">
+	    			    <h3 id = "emailOf2">aru@gmail.com</h3>
+	    			</div>
+	    			<p id = "enteredFB2">A simple visit to the coffee shop can tell you everything you need to know about how many variants of coffee there are you couldnt count them all even if you tried.😊😊 There are so many different brews, beans, and types, that you probably wont be able to taste them in one lifetime.</p>
+	    		
+	    		</div>
+
+	    		<div class = "finCom2">
+	    		    <div class = "user2">
+	    		    	<img id = "userPic2" src="https://www.pngarts.com/files/5/Avatar-Face-Transparent.png">
+	    			    <h3 id = "emailOf2">aida@gmail.com</h3>
+	    			</div>
+	    			<p id = "enteredFB2">The moment I walked in I was greeted by a most friendly and courteous staff member😍 The cafe was spotless, also to mention the washroom. The Blonde roast I had was delicious, not too hot as was the Black Bean Wrap.</p>
+	    		</div>
+
+	    		<div class = "finCom2">
+	    		    <div class = "user2">
+	    		    	<img id = "userPic2" src="https://www.pngarts.com/files/5/Avatar-Face-PNG-Image-Background.png">
+	    			    <h3 id = "emailOf2">aida@gmail.com</h3>
+	    			</div>
+	    			<p id = "enteredFB2">Great location. Service is good. Drinks are great. My one complaint is that you need to have gluten free bagels, buns, bread, and desserts. PLEASE do this so I can have something to snack on when I get my coffee 😊</p>
+	    		</div>
+
+	    	</div>
+	    </div>
+
+	    <div class = "catalog">
+
+	    	
+
+	    	<div class = "card">
+	    		
+	    		    <img class = "cake" src = "blueberry_cheesecake.jpg" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>blueberry cheesecake</u></p>
+	    		    <p class = "cost">$23.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><input class = "buying" type = "button" value = "place an order"></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239765?api_access_key=aa8eed72c38bab3a43" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>hazelnut cake</u></p>
+	    		    <p class = "cost">$25.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239756?api_access_key=bd3ccdc1f0d16ebb13" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>strawberry cake</u></p>
+	    		    <p class = "cost">$23.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239755?api_access_key=3e93c3e554d599744f" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>spinach cake</u></p>
+	    		    <p class = "cost">$22.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	
+
+	    	<br> 
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239753?api_access_key=7681bfcf3631def1d0" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>marakuya cake</u></p>
+	    		    <p class = "cost">$26.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+            
+            <div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "honey_cake.jpg" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>honey cake</u></p>
+	    		    <p class = "cost">$19.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		
+	    		    <img class = "cake" src = "cherrish_cheesecake.jpg" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>cherry cheesecake</u></p>
+	    		    <p class = "cost">$23.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239749?api_access_key=b65be169bab059f20e" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>citrus cake</u></p>
+	    		    <p class = "cost">$24.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "chocolate_cake.jpg" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>chocolate cake</u></p>
+	    		    <p class = "cost">$23.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239752?api_access_key=cd7d823b1dd154290c" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>mango cake</u></p>
+	    		    <p class = "cost">$27.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239750?api_access_key=9a298010ffcc3d648b" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>coffee cake</u></p>
+	    		    <p class = "cost">$23.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239757?api_access_key=26507b07c7739b0761" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>tiramisu</u></p>
+	    		    <p class = "cost">$23.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+	    
+
+	    
+
+	    	<div class = "card">
+	    		
+	    		    <img class = "cake" src = "berry-cheesecake.jpg" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>berry cheesecake</u></p>
+	    		    <p class = "cost">$28.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "apple_cheesecake.jpg" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>apple cheesecake</u></p>
+	    		    <p class = "cost">$23.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239751?api_access_key=a9f12ef0bf129fe700" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>lemon cake</u></p>
+	    		    <p class = "cost">$23.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239754?api_access_key=f3bb815489cf73669c" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>oreo cake</u></p>
+	    		    <p class = "cost">$24.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<br> 
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "cherry_cake.jpg" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>cherry cake</u></p>
+	    		    <p class = "cost">$21.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+
+	    	<div class = "card">
+	    		<div class = "image">
+	    		    <img class = "cake" src = "https://vk.com/photo374599146_457239758?api_access_key=6ee4e3824d65dc90dd" onmouseover="opacityChanging(this)" onmouseout="opacityBack(this)">
+	    		</div>
+	    		<div class = "content">
+	    		    <p class = "cakeName" onmouseover = "coloring(this)" onmouseout="coloringBack(this)"><u>vanilla cheesecake</u></p>
+	    		    <p class = "cost">$20.99</p>
+	    		    <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "buying">place an order</button></a>
+	    		</div>
+	    	</div>
+	   
+	    </div>
+	    <div class = "pageChanging">
+	    	<p class = "page" onmouseover = "coloring(this)" onmouseout="coloringBack(this)" onclick = "cataloguePages(this)">①</p>
+	    	<p class = "page" onmouseover = "coloring(this)" onmouseout="coloringBack(this)" onclick = "cataloguePages(this)">②</p>
+	    </div>
+
+	    <div class = "howToOrder">
+
+	    	<div class = "formLink">
+	    		<p class = "title3"> Place an order here → </p>
+	    		<a href = "https://docs.google.com/forms/d/e/1FAIpQLSdGPU-hDHFhq9cI9CPzw3l67DhA9Geg_pyPcTmiAAp7AsARgQ/viewform?usp=sf_link"><button class = "orderButton">go to order</button></a>
+	    	</div>
+
+	    	<div>
+	    	<div class = "steps">
+	    		<div class = "texts">
+	    			<p class = "stepNum" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">Step 1. </p>
+	    		    <p class = "stepDesc">Enter your phone number(it is required) and name. </p>
+	    		</div>
+	    		<img class = "screen" src="step1.png">
+	    	</div>
+
+	    	<div class = "steps">
+	    		<div class = "texts">
+	    		<p class = "stepNum" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">Step 2. </p>
+	    		<p class = "stepDesc">Select your choise. </p></div>
+	    		<img class = "screen" src="step2.png">
+	    	</div>
+
+	    	<div class = "steps">
+	    		<div class = "texts">
+	    		<p class = "stepNum" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">Step 3. </p>
+	    		<p class = "stepDesc">Don't forget to enter your address, in case you need delivery. </p></div>
+	    		<img class = "screen" src="step3.png">
+	    	</div>
+
+	    	<div class = "steps">
+	    		<div class = "texts">
+	    		<p class = "stepNum" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">Step 4. </p>
+	    		<p class = "stepDesc">Note a date the order should be ready on.</p></div>
+	    		<img class = "screen" src="step4.png">
+	    	</div>
+
+	    	<div class = "steps">
+	    		<div class = "texts">
+	    		<p class = "stepNum" onmouseover = "coloring(this)" onmouseout="coloringBack(this)">Step 5. </p>
+	    		<p class = "stepDesc">If you have some additional requirements(about decoring) leave them here. </p></div>
+	    		<img class = "screen" src="step1.png">
+	    	</div>
+	    </div>
+
+	</div>
+
+	<button onclick="topFunction()" id="myBtn">↑</button>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap"></script>
+
+	<script type="text/javascript" src="script.js"></script>
+
+	<hr class = "bottom">
+
+
+</body>
+</html>
