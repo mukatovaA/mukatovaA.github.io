@@ -1,0 +1,883 @@
+body{
+	
+	margin :0 auto;
+}
+
+hr{
+	color : #969799;
+	opacity: 0.8;
+}
+
+.logo {
+	display: flex;
+	justify-content: space-between;
+	margin : 0 auto;
+	height: 140px;
+}
+
+.loginSuggestion{
+	display: flex;
+	padding : 40px 50px;
+}
+
+#logotype{
+	width: 300px;
+	padding-left: 220px;
+}
+
+.myButton {
+	display: block;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	background-color:transparent;
+	border-radius:8px;
+	border:1px solid #969799;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family: 'Poiret One', cursive;
+	font-size:14px;
+	font-weight:bold;
+	padding:6px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	margin-top:16px;
+	box-shadow: 0 0 2px;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#suggestion{
+	font-family: 'Poiret One', cursive;
+	font-size:20px;
+	font-weight:bold;
+	padding : 0 20px;
+}
+
+#user_email{
+	font-family: 'Poiret One', cursive;
+	font-size:20px;
+	font-weight:bold;
+	padding : 0 20px;
+	display: flex;
+	padding : 40px 70px;
+	text-decoration: underline;
+}
+
+.popUp{
+	position: absolute;
+	top:0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.4);
+	z-index: 2;
+	opacity: 0;
+}
+
+#exit{
+	box-shadow: 0 0 2px;
+}
+
+.closed{
+	position: absolute;
+	top : -8px;
+	right: -8px;
+	cursor: pointer;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.popUpFilling{
+	background-color: white;
+	height : 300px;
+	position: relative;
+	padding : 25px 45px;
+	display: block;
+	border-radius: 9px;
+}
+
+#accountLogin{
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	letter-spacing: 10px;
+	font-size : 22px;
+	text-transform: uppercase;
+}
+
+#usernameRequest{
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	letter-spacing: 4px;
+	font-size : 20px;
+}
+
+#passwordRequest{
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	letter-spacing: 4px;
+	font-size : 20px;
+}
+
+#email{
+	height: 30px;
+	width: 200px;
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	letter-spacing: 4px;
+	font-size : 15px;
+	border-radius: 5px;
+	border-color: #dbdbdb;
+}
+
+#password{
+	height: 30px;
+	width: 200px;
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	letter-spacing: 4px;
+	font-size : 15px;
+	border-radius: 5px;
+	border-color: #dbdbdb;
+}
+
+.finLoggingIn {
+	height: 20px;
+	background-color:transparent;
+	border-radius:8px;
+	border:1px solid #969799;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family: 'Poiret One', cursive;
+	font-size:14px;
+	font-weight:bold;
+	padding:6px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+
+	margin-top:16px;
+}
+.finLoggingIn:hover {
+	background-color:transparent;
+}
+.finLoggingIn:active {
+	position:relative;
+	top:1px;
+}
+
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	padding: 0 220px;
+	font-size: 18px;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+
+.headElement{
+	margin : 0 20px;
+}
+
+#titleName{
+	text-align: center;
+	font-size: 28px;
+	padding: 10px 0px;
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	letter-spacing: 10px;
+}
+
+.row1{
+	display: flex;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.left{
+	float: right;
+}
+
+
+#mainPic{
+	width: 550px;
+	box-shadow: 0 0 5px;
+}
+.right{
+	padding: 0px 35px;
+	font-family: 'Poiret One', cursive;
+	width: 50%;
+}
+#rightSided{
+	width: 350px;
+	border: 16px solid #faf4c8;
+	box-shadow: 0 0 2px;
+}
+
+
+#title2{
+	height: 20px;
+	text-align: center; 
+}
+
+#article::first-letter{
+	font-size: 75px;
+	float: left;
+	line-height: 60px;
+	padding: 5px;
+	color: #969799;
+}
+
+#article{
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.divider{
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+
+#whisk{
+	width: 120px;
+	opacity: 0.7;
+}
+
+.contactInfo{
+	display: none;
+	padding: 0;
+}
+
+.row2{
+	display: block;
+	position: relative;
+	margin : auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+	width: 900px;
+}
+
+#mainTitle{
+	text-align: center;
+	font-size: 31px;
+	margin-bottom: 0px;
+	padding: 8px 0px;
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	letter-spacing: 10px;
+}
+
+#secondTitle{
+	text-align: center;
+	font-size: 20px;
+	padding: 3px 0px;
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	margin-bottom: 50px;
+}
+
+#comment{
+	height: 80px;
+	width : 90%;
+	padding: 15px;
+	background-color: #edebfa;
+	border-color: #adadad;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	font-size : 20px;
+	color : #666565;
+}
+
+#submit{
+	padding: 7px 15px;
+	font-family: 'Poiret One', cursive;
+	border-radius: 5px;
+	background-color: #f8faeb;
+	border : solid 1px #999999;
+	font-weight: bold;
+	cursor: pointer;
+	height: 35px;
+}
+
+#cancel{
+	padding: 7px 15px;
+	font-family: 'Poiret One', cursive;
+	border-radius: 5px;
+	background-color: #f8faeb;
+	border : solid 1px #999999;
+	font-weight: bold;
+	cursor: pointer;
+	height: 35px;
+}
+
+.commentList{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: 'Poiret One', cursive;
+	font-weight : bold;
+	font-size : 20px;
+	color : #666565;
+	text-align: center;
+}
+
+.finCom{
+	display: none;
+	justify-content: space-between;
+	border-color: #f8faeb;
+	border : solid 1px #999999;
+	border-radius: 10px;
+	margin-bottom: 45px;
+	padding : 30 50px;
+	background-color: #edebfa;
+	height: 140px;
+	width: 900px;
+}
+
+.user{
+	margin : 5px 20px;
+}
+
+#userPic{
+	margin-top: 15px;
+	width: 40px;
+}
+
+#emailOf{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#enteredFB{
+	padding-left: 70px;
+	font-size: 20px;
+}
+
+.finCom2{
+	display: flex;
+	justify-content: space-between;
+	border-color: #f8faeb;
+	border : solid 1px #999999;
+	border-radius: 10px;
+	margin-bottom: 45px;
+	padding : 30 50px;
+	background-color: #edebfa;
+	height: 140px;
+	width: 900px;
+}
+.user2{
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right : 7px;
+	font-weight: bold;
+	color : #666565;
+	font-size : 18px;
+}
+#userPic2{
+	width: 70px;
+}
+
+#enteredFB2{
+	padding: 20 30px;
+	margin-right: 20px;
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color : #666565;
+	vertical-align: middle;
+}
+
+
+label{
+	margin: 0px;
+	padding-bottom: 13px;
+	font-size: 25px;
+	display: none;
+}
+
+#toggle{
+	display: none;
+}
+
+@media screen and (max-width: 667px){
+
+	label{
+		display: block;
+		text-align: center;
+		opacity: 0.8;
+	}
+
+	hr{
+		margin : 0 auto;
+		border: 1.5;
+	}
+
+	.main{
+		max-width: 667px;
+	}
+
+	.header{
+		padding : 0 40px; 
+		font-size: 22px;
+		letter-spacing: 8px;
+		line-height: 36px;
+		display: none;
+		text-align: center;
+		height: 160px;
+	}
+
+	.logo{
+		display: flex;
+		margin: 0 auto;
+		height: 90px;
+	}
+
+	.loginSuggestion{
+		display: flex;
+		
+	}
+
+	#logotype{
+		padding-left: 3%;
+		padding-top: 7%;
+		max-width: 40%;
+	}
+
+	#suggestion{
+		display: none;
+	}
+
+	.popUpFilling{
+		max-width: 90%;
+	}
+
+	.myButton{
+		margin-top: 5px;
+		width: 80px;
+	}
+
+	#titleName{
+		font-size: 20px;
+		padding: 0 15%;
+	}
+
+	#toggle:checked + .header{
+		display: block;
+	}
+
+	.main{
+		margin : 0 auto;
+	}
+
+	.row1{
+		padding-right: 0%;
+		padding-left: 15%;
+	}
+
+	.left{
+		width: 130%;
+		padding-right: 3%;
+	}
+
+	#mainPic{
+		width: 100%;
+		vertical-align: middle;
+		margin-top: 60%;
+	}
+
+	.right{
+		padding-right: 0%;
+		padding-left: 3%;
+		width : 65%;
+	}
+
+	#rightSided{
+		width: 80%
+	}
+
+	#title2{
+		margin : 5%;
+		font-size: 15px;
+	}
+
+	#article{
+		font-size: 13px;
+		margin-top: 10%;
+		margin-bottom: 7%;
+	}
+
+	#article::first-letter{
+	    font-size: 50px;
+	    float: left;
+	    line-height: 27px;
+	    padding: 5px;
+	    color: #969799;
+    }
+    
+    .hidden{
+		display: none;
+	}
+
+    .divider{
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
+
+	#whisk{
+		width: 90px;
+	}
+
+	.row2{
+		max-width: 100%;
+	}
+
+
+	#mainTitle{
+		font-size: 18px;
+	}
+
+	#secondTitle{
+		font-size: 16px;
+	}
+	
+	#comment{
+		max-width: 70%;
+	}
+
+	#enteredFB2{
+		font-size: 12px;
+	}
+
+	.user2{
+		font-size: 11px;
+	}
+
+	.userPic2{
+		width: 30px;
+	}
+
+	
+
+	.commentList{
+		display: block;
+		text-align: center;
+		justify-content: space-between;
+		margin-left : 8%;
+	}
+
+	.finCom2{
+		max-width: 80%;
+		margin-left: 7%;
+	}
+
+	.title3{
+		font-size: 20px;
+	}
+
+	.user_prof{
+		display: none;
+	}
+
+	.finCom{
+		max-width: 80%;
+		overflow: hidden;
+		text-align: center;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	#enteredFB{
+		font-size: 13px;
+		padding : 10px 10px;
+		overflow: hidden;
+	}
+
+	
+	.finCom2{
+		margin: 7% 10%;
+		max-width: 80%;
+		overflow: hidden;
+		font-size: 1px;
+		text-align: center;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	.contactInfo{
+		padding: 0;
+		position : center;
+	}
+
+	.socialMedia{
+		max-width: 100%;
+	}
+
+	#icons{
+		max-width: 100%;
+	}
+
+	#smLinks{
+		max-width: 70%;
+	}
+	#smIcon{
+		max-width: 70%;
+
+	}
+
+	.circle{
+		margin : 3% 5%;
+	}
+
+	#location{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#map{
+		max-width: 80%;
+		max-height: 70%;
+		margin-left: 6%;
+	}
+
+	.invitation{
+		width: 100%;
+	}
+
+	.steps{
+		display: block;
+	}
+
+	.texts{
+		max-width: 100%;
+		text-align: center;
+		margin: 0px;
+	}
+}
+
+.contactInfo{
+	display: none;
+	position: center;
+	padding : 0;
+	margin-bottom: 80px;
+}
+
+#icons{
+	display: flex;
+	justify-content: center;
+	
+}
+.circle{
+	width: 100px;
+	margin: 3% 5%;
+}
+#smIcon{
+	width: 70px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#smLinks{
+	width: 70px;
+}
+
+#location{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+#map{
+	height: 400px;
+	width: 480px;
+	border : 15px solid #d4d8d9;
+	text-align: center;
+}
+.invitation{
+	
+	vertical-align: middle;
+	padding-top: 3%;
+	display: block;
+	text-align: center;
+
+}
+
+.mapTitle{
+	font-family: 'Poiret One', cursive;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.address{
+	font-family: 'Poiret One', cursive;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+#cafeImg{
+	width: 500px;
+	padding-top: 140px;
+}
+
+.catalog{
+	margin: 0 auto;
+	display: none;
+	flex-wrap: wrap;
+	width : 80%;
+	justify-content: center;
+}
+
+.image{
+	display: block;
+	justify-content: center;
+}
+
+.card{
+	display: block;
+	flex: 1 16%;
+	padding: 1.5%;
+	flex-grow: 1;
+	flex-basis: 16%;
+	border: 1px solid #ccc;
+	max-width: 220px;
+	justify-content: center;
+	text-align: center;
+	margin : 20px;
+}
+
+.cake{
+	width: 200px;
+	height: 200px;
+}
+
+.content{
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	margin-top: auto;
+}
+
+.cakeName{
+	font-size: 20px;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+
+.buying{
+	padding: 7px 15px;
+	font-family: 'Poiret One', cursive;
+	border-radius: 5px;
+	background-color: #f8faeb;
+	border : solid 1px #999999;
+	font-weight: bold;
+	cursor: pointer;
+	height: 35px;
+}
+
+.pageChanging{
+	display: none;
+	justify-content: center;
+	font-family: 'Poiret One', cursive;
+}
+
+.page{
+	font-size: 30px;
+	color : #6e6c6b;
+	margin: 60px; 
+	cursor: pointer;
+}
+
+.howToOrder{
+	display: none;
+	justify-content: space-between;
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+}
+
+.formLink{
+	display: flex;
+	justify-content: center;
+}
+
+.title3{
+	font-size: 25px;
+	margin: 10px 20px;
+	vertical-align: middle;
+}
+
+.stepNum{
+	font-size: 23px;
+}
+
+.orderButton{
+	padding: 5px 15px;
+	font-family: 'Poiret One', cursive;
+	border-radius: 8px;
+	background-color: #f8faeb;
+	border : solid 1px #999999;
+	font-weight: bold;
+	font-size: 18px;
+	cursor: pointer;
+	height: 55px;
+}
+
+.steps{
+	display: block;
+}
+.screen{
+	width: 50%;
+	border: 8px solid #d7cae0;
+	border-radius: 5px;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    border-radius: 10px;
+    background-color: #966986;
+    opacity: 0.7;
+    color: white;
+    cursor: pointer; 
+    padding: 15px; 
+    font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+
+#emailOf{
+	font-size: 15px;
+}
+
+.bottom{
+	margin-top: 20px;
+	margin-bottom:30px;
+}
+
